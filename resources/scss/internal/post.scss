@@ -1,0 +1,130 @@
+/*
+.user-since {
+    margin-left: 40px;
+    text-align: center;
+    width: 250px;
+    color: #707070;
+}*/
+
+$aside_element_width: 100%;
+$aside_element_font_size: 20px;
+
+.breadcrumbline {
+    padding-right: 0;
+}
+
+
+.ad-head-line {
+    margin-top: 0;
+    word-break: break-word;
+}
+
+.post-aside {
+    > button {
+        margin-top: 10px;
+        width: $aside_element_width;
+    }
+
+    //> div {
+    //    &:nth-of-type(1) {
+    //        margin-top: 65px;
+    //    }
+    //}
+}
+
+.price {
+    font-size: $aside_element_font_size;
+    margin-top: 10px;
+    padding: 10px 16px;
+    text-align: center;
+    width: $aside_element_width;
+    color: white;
+}
+
+.ad-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #f5f5f5;
+    width: $aside_element_width;
+    min-height: 60px;
+
+    span {
+        font-size: $aside_element_font_size;
+        margin-bottom: 0;
+        word-wrap: break-word;
+    }
+}
+
+.user {
+    font-size: $aside_element_font_size;
+    margin-top: 10px;
+    padding: 10px 16px;
+    text-align: center;
+    width: $aside_element_width;
+    color: #707070;
+
+    > small {
+        font-size: small;
+    }
+}
+
+.manage-post {
+    margin-top: 10px;
+    width: $aside_element_width;
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        margin-top: 5px;
+    }
+
+    a, button {
+        font-size: 1rem;
+        display: inline-block;
+    }
+}
+
+//.ad-description {
+//    margin-top: 20px;
+//}
+//
+//.ad-file-upload {
+//    margin-bottom: 7px;
+//}
+//
+//.ad-file-upload-button {
+//    max-width: 140px;
+//}
+
+.form-group.required {
+    .control-label {
+        &:after {
+            content: "*";
+            color: #FF0000;
+        }
+    }
+}
+
+.time-tooltip {
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+}
+
+.time-tooltip:hover {
+    text-decoration-style: inherit;
+    text-decoration-line: inherit;
+    cursor: pointer;
+}
+
+.post-time {
+    gap: 1rem;
+}
+
+.post-image {
+    max-width: 100%;
+    max-height: 600px;
+}

@@ -1,0 +1,1 @@
+window.GLightbox = require('glightbox');

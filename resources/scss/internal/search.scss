@@ -1,0 +1,25 @@
+.price-range {
+    .input-group-text {
+        width: 4.5em;
+        display: inline-block;
+    }
+}
+
+
+.post-thumbnail {
+    height: 200px;
+    background-color: #d5d5d5;
+    object-fit: cover;
+}
+
+.post-in-search {
+    .card-title{
+        height: 2.5em;
+        overflow: hidden;
+    }
+
+    .card-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+}
