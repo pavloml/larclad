@@ -4,7 +4,7 @@
         <div class="col-12">
             @if($unreadMessagesCount > 0)
                 <div class="text-center h5">You have {{ $unreadMessagesCount }}
-                    unread messages
+                    unread {{ Str::plural('message', $unreadMessagesCount) }}
                 </div>
             @else
                 <div class="text-center h5">You don't have any unread messages</div>

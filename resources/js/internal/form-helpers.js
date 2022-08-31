@@ -79,6 +79,4 @@ exports.searchFormHelper = (searchForm) => {
     }else {
         searchForm.action += '/all'
     }
-
-    console.log(searchForm.action);
 }

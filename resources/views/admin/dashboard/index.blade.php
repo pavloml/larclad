@@ -2,15 +2,6 @@
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 pl-2">
         <div class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
             <h1 class="h2">Dashboard</h1>
-{{--            <div class="btn-toolbar mb-2 mb-md-0">--}}
-{{--                <div class="btn-group mr-2">--}}
-{{--                    <button class="btn btn btn-outline-info">Export</button>--}}
-{{--                </div>--}}
-{{--                <button class="btn btn-sm btn-outline-secondary dropdown-toggle">--}}
-{{--                    <span data-feather="calendar"></span>--}}
-{{--                    This week--}}
-{{--                </button>--}}
-{{--            </div>--}}
         </div>
         <div class="row row-cols-1 row-cols-md-3 text-center">
             <div class="col">
@@ -47,9 +38,6 @@
         <div class="my-4">
             <canvas id="weekNewPosts" width="400" height="100" aria-label="New posts weekly statistics chart" role="img"></canvas>
         </div>
-{{--        <div class="my-4">--}}
-{{--            <canvas id="weekNewUsers" width="400" height="100" aria-label="New users weekly statistics chart" role="img"></canvas>--}}
-{{--        </div>--}}
 
     </main>
     @push('scripts')

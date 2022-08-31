@@ -30,7 +30,7 @@
 
 <main class="row justify-content-center">
     <div class="col-12 col-md-8">
-        <h1 class="ad-head-line text-center">{{ $post->title }}</h1>
+        <h1 class="ad-head-line text-center h2">{{ $post->title }}</h1>
         @if(!$post->images->isEmpty())
             <div class="image-container d-flex justify-content-center">
             <a href="{{ asset($post->getMainImage()->full_size_path) }}" class="glightbox" data-gallery="post">
