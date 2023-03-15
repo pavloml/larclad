@@ -19,7 +19,9 @@ class Ban extends Model
      */
     protected $guarded = ['id'];
 
-    protected $dates = ['banned_until'];
+    protected $casts = [
+        'banned_until' => 'datetime',
+    ];
 
     public function user()
     {

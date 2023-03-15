@@ -10,13 +10,16 @@ class AdminDashboardController extends Controller
 {
     public function index()
     {
-        $weekNewPostsStats = DB::select(DB::raw('SELECT t.day::date, count(posts.id)'
-            . 'FROM generate_series(current_date - interval \'6 days\' , current_date, interval  \'1 day\') AS t(day)'
-            . 'LEFT JOIN posts ON t.day=posts.created_at::date GROUP BY t.day ORDER BY t.day'));
 
-        $weekNewUsersStats = DB::select(DB::raw('SELECT t.day::date, count(users.id)'
+        $weekNewPostsStats = DB::SELECT(DB::raw('SELECT t.day::date, count(posts.id)'
             . 'FROM generate_series(current_date - interval \'6 days\' , current_date, interval  \'1 day\') AS t(day)'
-            . 'LEFT JOIN users ON t.day=users.created_at::date GROUP BY t.day ORDER BY t.day'));
+            . 'LEFT JOIN posts ON t.day=posts.created_at::date GROUP BY t.day ORDER BY t.day')
+            ->getValue(DB::connection()->getQueryGrammar()));
+
+        $weekNewUsersStats = DB::SELECT(DB::raw('SELECT t.day::date, count(users.id)'
+            . 'FROM generate_series(current_date - interval \'6 days\' , current_date, interval  \'1 day\') AS t(day)'
+            . 'LEFT JOIN users ON t.day=users.created_at::date GROUP BY t.day ORDER BY t.day')
+            ->getValue(DB::connection()->getQueryGrammar()));
 
 
         return view('admin.dashboard.index', ['title' => config('app.name') . ' Dashboard',

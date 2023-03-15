@@ -1,13 +1,13 @@
 # Larclad
-![Laravel version](https://img.shields.io/badge/laravel-9-blue)
+![Laravel version](https://img.shields.io/badge/laravel-10-blue)
 [![License](https://img.shields.io/badge/license-MIT-success)](https://opensource.org/licenses/MIT)
 
 Larclad is a classified ads CMS based on Laravel Framework
 
 ## Requirements
-- PHP 8.0+
+- PHP 8.1+
 - PostgreSQL 13+
-- Composer
+- Composer 2.2.0+
 - NPM
 - BCMath PHP Extension
 - Ctype PHP Extension
