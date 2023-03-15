@@ -6,7 +6,6 @@ use App\Models\Ban;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
 
 class AdminBanController extends Controller
 {

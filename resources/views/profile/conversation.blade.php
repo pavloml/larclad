@@ -1,5 +1,8 @@
 <x-layout :title="$title">
 <x-profile-header />
+    <section class="row bg-light my-3 p-2 rounded justify-content-center">
+        <p class="h5 text-muted ">Original post: <a href="{{ url("/post/{$thread->post->id}/{$thread->post->slug}") }}">{{ $thread->post->title }}</a></p>
+    </section>
     <section class="row justify-content-center">
     <ul class="list-unstyled col-12 pm-container mx-1">
     @forelse($messages as $message)

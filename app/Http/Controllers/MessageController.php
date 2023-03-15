@@ -96,7 +96,7 @@ class MessageController extends Controller
      */
     public function showThread(string $thread_id, Request $request)
     {
-        $thread = Thread::findOrFail($thread_id);
+        $thread = Thread::with(['post'])->findOrFail($thread_id);
 
 
         if (!in_array($request->user()->id, [$thread->initiator_id, $thread->post_author_id])) {

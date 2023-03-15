@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use App\Events\FailedLogin;
 use App\Events\SuccessfulLogin;
 use App\Models\User;
-use App\Notifications\FailedLoginNotification;
-use App\Notifications\SuccessfulLoginNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\RateLimiter;

@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 
 use App\Events\PasswordUpdated;
 use App\Rules\PasswordRule;
-use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Password;
